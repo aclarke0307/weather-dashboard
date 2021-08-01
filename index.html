@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="shadow p-3 mb-2 bg-info">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+            <h3>Search for City:</h3>
+            <form>
+                <input id="searchCity" name="search" placeholder="City Name"  class="form-control" autofocus="true" type="text">
+                <button class="btn btn-primary btn-primary btn-block">Search<i class="fas fa-search"></i></button>
+            </form>
+                </div>
+               <!--list of city underneath search button-->
+                <div id="city-list" class="w-100">
+        
+                </div>
+                <!---section for current weather-->
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-body"></div>
+                    </div>
+                    <!--shows weather for the next 5days-->
+                    <div class="m-2">
+                        <h3> 5-Day Forcast:</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
