@@ -14,15 +14,32 @@
         <h1>Weather Dashboard</h1>
     </header>
     <main>
-        <div class="col-12 col-md-4">
-            <div class="card">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
             <h3>Search for a City:</h3>
             <form>
                 <input id="search-city" name="search" placeholder="City Name"  class="form-control" autofocus="true" type="text">
-                <button type="submit" class="btn btn-primary btn-primary btn-block">Search</button>
+                <button type="submit" class="btn btn-primary btn-primary btn-block">Search<i class="fas fa-search"></i></button>
             </form>
+                </div>
+               <!--list of city underneath search button-->
+                <div class="w-100">
+                    <ul class="city-list"></ul>
+                </div>
+                <!---section for current weather-->
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-body"></div>
+                    </div>
+                    <!--shows weather for the next 5days-->
+                    <div class="m-2">
+                        <h3> 5-Day Forcast:</h3>
+                    </div>
+                </div>
             </div>
         </div>
+
     </main>
     <script src="./assets/js/script.js"></script>
 </body>
