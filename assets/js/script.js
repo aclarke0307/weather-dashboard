@@ -8,7 +8,13 @@
             return response.json();
         })
         .then(function(data){
-            console.log(data);
+            document.getElementById('city-list').innerHTML=" ";
+            data.weather.forEach(function(city){
+                var pEl =document.createElement("p");
+                pEl.textContent= city.id.name;
+                document.getElementById('city-list').appendChild(pEl);
+            })
+        
         });
 
- })
+ });
