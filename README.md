@@ -10,6 +10,8 @@ The purpose of this project was to have the user/traveler be able to enter the n
 *css
 *Bootstrap
 *OpenWeather API
+## Contibutors
+aclarke0307
 
 ## Website
 http://aclarke0307.github.io/weather-dashboard/
