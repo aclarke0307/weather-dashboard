@@ -9,7 +9,7 @@ var listCity =document.querySelector(".list-city");
 
 
 button.addEventListener("click", function(){
-fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&APPID=f2282ab08d953c2ff58c683d42d09c9a')
+fetch('https://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&APPID=f2282ab08d953c2ff58c683d42d09c9a')
     .then(function(response){
         return response.json();
     })
