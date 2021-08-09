@@ -26,7 +26,7 @@ fetch('http://api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&APP
         humidity.innerHTML = "Humidity:" + " "+ humidityValue;
         wind.innerHTML = "Wind:" + " "+ windValue + "MPH";
         
-        listCity.append(nameValue);
+    
     })
    // .catch(err => alert("No City Found!"))
 
