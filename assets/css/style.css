@@ -3,3 +3,10 @@ h1{
     text-align: center;
     color: aliceblue;
 }
+.name{
+    color: black;
+}
+button{
+    height: 40px;
+    width: 20px;
+}

@@ -18,19 +18,26 @@
             <div class="row">
                 <div class="col-md-3">
             <h3>Search for City:</h3>
-            <form>
-                <input id="searchCity" name="search" placeholder="City Name"  class="form-control" autofocus="true" type="text">
-                <button class="btn btn-primary btn-primary btn-block">Search<i class="fas fa-search"></i></button>
-            </form>
-                </div>
+            <div class="input">
+                 <input type="text" class="inputValue">
+                 <input type="submit" value="Submit" class="button">
+            </div>
                <!--list of city underneath search button-->
-                <div id="city-list" class="w-100">
-        
-                </div>
+               <div class="city-list"></div>
+        </div>
+                
                 <!---section for current weather-->
-                <div class="col-md-9">
+                <div class="col-md-9 center">
                     <div class="card">
-                        <div class="card-body"></div>
+                        <div class="card-body">
+                            <div class="display">
+                                <h1 class="name"> </h1> 
+                                <p class="temp"></p>
+                                <p class="humidity"></p>
+                                <p class="wind"></p>
+                             
+                            </div>
+                        </div>
                     </div>
                     <!--shows weather for the next 5days-->
                     <div class="m-2">
@@ -38,7 +45,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
 
     </main>
     <script src="./assets/js/script.js"></script>
